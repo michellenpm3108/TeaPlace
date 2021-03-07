@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Poppins:wght@100;200;300;400;600;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color:#AADFC5 ;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(50px, 300px) minmax(1em, 1fr);
+
+}
+/* TYPOGRAPHY */
+.logo{
+    text-decoration: none;
+    color: #7A4900;
+    font-weight: 700;
+}
+.hero-title {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.hero-sub{
+    color: #535353;
+    font-size: .75rem;
+    line-height: 1.75;
+}
+/* LAYOUT */
+.main-grid {
+    grid-column: 2/-2;
+    /* border: 1px solid; */
+}
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 1em 0;
+    overflow: hidden;
+}
+.open {
+    color: #7A4900;
+}
+.navigation {
+   
+}
+
+/* HERO SECTION */
+.hero-img {
+    width: 100vw;
+    position: absolute;
+    left: 5em;
+    top: 3em;
+}
+.hero-title {
+    margin: 3.7em 0 0;
+}
+.hero-sub {
+    width: 70%;
+}
+.cta {
+    text-decoration: none;
+    background: #7A4900;
+    color: #fff;
+    font-size: .75rem;
+    letter-spacing: .3em;
+    padding: .5em 1.5em;
+    margin: 2em 0;
+    display: inline-block;
+
+}
