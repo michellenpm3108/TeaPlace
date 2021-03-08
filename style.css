@@ -4,8 +4,8 @@ body {
     padding: 0;
     background-color:#AADFC5 ;
     font-family: 'Poppins', sans-serif;
-    display: grid;
-    grid-template-columns: minmax(1em, 1fr) minmax(50px, 300px) minmax(1em, 1fr);
+    /* display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(50px, 300px) minmax(1em, 1fr); */
 
 }
 /* TYPOGRAPHY */
@@ -40,12 +40,54 @@ header {
     overflow: hidden;
 }
 .open {
-    color: #7A4900;
+    cursor: pointer;
+    margin: .5em 1em;
 }
-.navigation {
-   
+.exit {
+    width: 3em;
+    float: right;
+    cursor: pointer;
+    margin: 1em;
 }
 
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #ffffffd6;
+    min-height: 100vh;
+    width: 60vw;
+    visibility: hidden;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: all 1s;
+}
+.open-nav {
+    visibility: unset;
+    transform: translateX(0);
+    opacity: 1;
+}
+ul {
+    padding: 0;
+    margin-top: 4em;
+    list-style-type: none;
+}
+.nav-link {
+    text-decoration: none;
+    color: #7A4900;
+    font-size: 2rem;
+    padding: 1em 2em;
+    display: block;
+
+}
+.nav-link:hover,
+.nav-link:focus {
+    color: #47946E;
+    font-weight: bold;
+}
+.active {
+    color: #47946E;
+}
 /* HERO SECTION */
 .hero-img {
     width: 100vw;
