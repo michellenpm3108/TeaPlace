@@ -55,15 +55,15 @@ nav {
     top: 0;
     right: 0;
     background-color: #ffffff;
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
-    visibility: hidden;
+    display: none;
     transform: translateX(50%);
     opacity: 0;
     transition: all 1s;
 }
 .open-nav {
-    visibility: unset;
+    display: block;
     transform: translateX(0);
     opacity: 1;
 }
@@ -149,34 +149,27 @@ ul {
     z-index: -1;
 }
 
-@media (min-width: 350px) {
-    .cta {
-        display: inline-block
-    }
-}
 
-@media (min-width: 550px) {
+
+@media (min-width: 500px) {
+    body {
+        font-size: 18px;
+    }
     .cta {
         display: inline-block
-    }
-    nav {
-        visibility: unset;
-        background: none;
-        border: 1px solid;
-        position: unset;
-        height: 10vh;
-        z-index: unset;
     }
     .exit, 
     .open {
         display: none;
     }
+    .nav {
+        display: block;
+        position: unset;
+        height: unset;
+    }
     ul {
         display: flex;
         flex-direction: row;
         margin-top: 0;
-    }
-    .nav-link {
-        font-size: 1rem;
     }
 }
