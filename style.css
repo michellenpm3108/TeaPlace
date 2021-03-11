@@ -118,6 +118,7 @@ ul {
     letter-spacing: .3em;
     padding: .5em 1.5em;
     margin: 2em 0;
+    white-space: nowrap;
 }
 .outline {
     background: none;
@@ -156,9 +157,7 @@ ul {
     body {
         font-size: 18px;
     }
-    .cta {
-        display: inline-block;
-    }
+
     .exit,
     .open {
         display: none;
@@ -195,5 +194,41 @@ ul {
     }
     .cta {
         font-size: .75rem;
+        display: inline-block
+    }
+    .outline {
+        margin-left: 1em;
+    }
+}
+
+@media (min-width: 800px) {
+    .hero-section {
+        display: flex;
+        text-align: left;
+    }
+    .content-container {
+        margin-top: 4em;
+        padding-left: 2em;
+    }
+    .hero-sub {
+        margin-left: 0;
+    }
+    .hero-img {
+        top: 5em;
+        right: -12em;
+        width: 35em; 
+    }
+    .hero-title::before{
+        left: 7%;
+        top: 5.2em;
+    }
+    .hero-sub{
+        width: 50%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .hero-sub {
+        /* width: 60%; */
     }
 }
