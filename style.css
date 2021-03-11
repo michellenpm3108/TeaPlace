@@ -202,14 +202,24 @@ ul {
 }
 
 @media (min-width: 800px) {
+    body {
+        background: white;
+    }
+    .col-left {
+        background-color: #AADFC5;
+        width: 60%;
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+    }
     .hero-section {
         display: flex;
         text-align: left;
     }
     .content-container {
-        margin-top: 4em;
-        padding-left: 2em;
+        margin: 4em 0 0 2em;
     }
+
     .hero-sub {
         margin-left: 0;
     }
@@ -219,8 +229,9 @@ ul {
         width: 35em; 
     }
     .hero-title::before{
-        left: 7%;
-        top: 5.2em;
+        left: 1.2em;
+        top: 4em;
+        width: 10%;
     }
     .hero-sub{
         width: 50%;
@@ -228,7 +239,9 @@ ul {
 }
 
 @media (min-width: 1000px) {
-    .hero-sub {
-        /* width: 60%; */
+    .hero-img {
+        right: 2em;
+        width: 30em;
+        object-fit: cover;
     }
 }
