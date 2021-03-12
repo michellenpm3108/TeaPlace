@@ -1,5 +1,5 @@
 overflow: hidden 
-dung de chan hinh anh chay ra khoi man hinh va xuat hien scroll bar
+khong cho scroll bar xuat hien
 
 
 float: right/left
